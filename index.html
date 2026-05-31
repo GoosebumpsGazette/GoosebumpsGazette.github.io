@@ -23,18 +23,28 @@
     /* Middle content column */
     .content {
   width: 50%;
-  min-width: 320px;
-  max-width: 800px;
-
   margin: 0 auto;
-
   border-left: 2px solid red;
   border-right: 2px solid red;
-
   padding: 20px;
   min-height: 100vh;
   box-sizing: border-box;
-    }
+}
+
+/* When screen gets smaller */
+@media (max-width: 900px) {
+  .content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 95%;
+    border-left: none;
+    border-right: none;
+  }
+}
 
     /* Intro text */
     .intro {
