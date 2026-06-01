@@ -68,8 +68,39 @@
       margin-bottom: 30px;
     }
 
+    /* Left-aligned content blocks */
+    .spiel-text {
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    /* Table Design */
+    .rating-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .rating-table th, .rating-table td {
+      border: 1px solid #ffffff;
+      padding: 12px;
+      vertical-align: top;
+    }
+
+    /* Left column of table styling */
+    .rating-table td:first-child {
+      width: 25%;
+      font-weight: bold;
+    }
+
     /* Review Template Spacing */
     .book-entry {
+      margin-top: 40px;
       margin-bottom: 40px;
       font-size: 18px;
       line-height: 1.6;
@@ -79,6 +110,13 @@
       font-size: 22px;
       display: block;
       margin-bottom: 5px;
+    }
+
+    /* Left-aligned normal text under book titles */
+    .book-review {
+      display: block;
+      text-align: left;
+      font-size: 16px;
     }
 
     /* Back Home Link */
@@ -107,73 +145,108 @@
 
     <div class="subtitle">Ranking of the Original 62</div>
 
-    <p class="book-entry"><strong class="book-title">Book one</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book two</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book three</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book four</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book five</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book six</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book seven</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book eight</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book nine</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book ten</strong>normal text</p>
+    <div class="spiel-text">
+      The rating descriptions below may not be reflective of every single book (e.g: some 9s might have slight negatives, not all 8’s are necessarily on the verge of being 9), but it’s a general guide to what I’m thinking. The main goal here was to avoid reactively rating books like a lot of other reviews do. For instance, they will rate a bad book 1/10. In my mind, a 1/10 would have to be so incomprehensibly bad to the point where the book wouldn’t even have the basic structure of a story.
+    </div>
 
-    <p class="book-entry"><strong class="book-title">Book eleven</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book twelve</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book thirteen</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book fourteen</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book fifteen</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book sixteen</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book seventeen</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book eighteen</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book nineteen</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book twenty</strong>normal text</p>
+    <table class="rating-table">
+      <tr>
+        <td>9.0 and above</td>
+        <td>These are the best books in the series. They are close to perfect and arguably among Stine’s best works.</td>
+      </tr>
+      <tr>
+        <td>8.0-8.9</td>
+        <td>These are fantastic books. One or two minor nitpicks might keep them out of 9.0+, but they nevertheless are excellent reads.</td>
+      </tr>
+      <tr>
+        <td>7.0-7.9</td>
+        <td>These are good books. They will have a few flaws, but are enjoyable reads.</td>
+      </tr>
+      <tr>
+        <td>6.0-6.9</td>
+        <td>These books are below average or a mixed bag, but they can still be somewhat enjoyable. That said, they contain pretty significant flaws.</td>
+      </tr>
+      <tr>
+        <td>5.0-5.9</td>
+        <td>These are bad books. They contain several major flaws, and were not enjoyable to read.</td>
+      </tr>
+      <tr>
+        <td>Below 5.0</td>
+        <td>These are very poorly written books that are the worst in the series. They were painful to finish and there was almost nothing I enjoyed about them.</td>
+      </tr>
+    </table>
 
-    <p class="book-entry"><strong class="book-title">Book twenty-one</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book twenty-two</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book twenty-three</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book twenty-four</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book twenty-five</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book twenty-six</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book twenty-seven</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book twenty-eight</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book twenty-nine</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book thirty</strong>normal text</p>
+    <div class="spiel-text">
+      Fortunately, none of the Goosebumps books come close to that. But there are some stinkers…
+    </div>
 
-    <p class="book-entry"><strong class="book-title">Book thirty-one</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book thirty-two</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book thirty-three</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book thirty-four</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book thirty-five</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book thirty-six</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book thirty-seven</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book thirty-eight</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book thirty-nine</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book forty</strong>normal text</p>
+    <div class="book-entry"><strong class="book-title">Book one</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book two</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book three</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book four</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book five</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book six</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book seven</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book eight</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book nine</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book ten</strong><span class="book-review">normal text</span></div>
 
-    <p class="book-entry"><strong class="book-title">Book forty-one</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book forty-two</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book forty-three</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book forty-four</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book forty-five</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book forty-six</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book forty-seven</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book forty-eight</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book forty-nine</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book fifty</strong>normal text</p>
+    <div class="book-entry"><strong class="book-title">Book eleven</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book twelve</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book thirteen</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book fourteen</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book fifteen</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book sixteen</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book seventeen</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book eighteen</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book nineteen</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book twenty</strong><span class="book-review">normal text</span></div>
 
-    <p class="book-entry"><strong class="book-title">Book fifty-one</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book fifty-two</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book fifty-three</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book fifty-four</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book fifty-five</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book fifty-six</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book fifty-seven</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book fifty-eight</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book fifty-nine</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book sixty</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book sixty-one</strong>normal text</p>
-    <p class="book-entry"><strong class="book-title">Book sixty-two</strong>normal text</p>
+    <div class="book-entry"><strong class="book-title">Book twenty-one</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book twenty-two</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book twenty-three</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book twenty-four</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book twenty-five</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book twenty-six</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book twenty-seven</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book twenty-eight</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book twenty-nine</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book thirty</strong><span class="book-review">normal text</span></div>
+
+    <div class="book-entry"><strong class="book-title">Book thirty-one</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book thirty-two</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book thirty-three</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book thirty-four</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book thirty-five</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book thirty-six</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book thirty-seven</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book thirty-eight</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book thirty-nine</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book forty</strong><span class="book-review">normal text</span></div>
+
+    <div class="book-entry"><strong class="book-title">Book forty-one</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book forty-two</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book forty-three</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book forty-four</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book forty-five</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book forty-six</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book forty-seven</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book forty-eight</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book forty-nine</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book fifty</strong><span class="book-review">normal text</span></div>
+
+    <div class="book-entry"><strong class="book-title">Book fifty-one</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book fifty-two</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book fifty-three</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book fifty-four</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book fifty-five</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book fifty-six</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book fifty-seven</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book fifty-eight</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book fifty-nine</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book sixty</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book sixty-one</strong><span class="book-review">normal text</span></div>
+    <div class="book-entry"><strong class="book-title">Book sixty-two</strong><span class="book-review">normal text</span></div>
 
     <br>
     <a href="index.html" class="back-link">← Back to Main Page</a>
