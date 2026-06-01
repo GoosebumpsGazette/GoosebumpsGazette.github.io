@@ -15,7 +15,7 @@
 
     /* Top title */
     .title {
-      display: block; /* Added to ensure text-align: center works perfectly */
+      display: block; 
       text-align: center;
       font-size: 70px;
       color: #00cc44;
@@ -23,7 +23,7 @@
       margin-top: 30px;
       margin-bottom: 10px;
       letter-spacing: 2px;
-      text-decoration: none; /* removes underline */
+      text-decoration: none; 
       
       /* glow effect */
       text-shadow:
@@ -41,7 +41,7 @@
       padding: 20px;
       min-height: 100vh;
       box-sizing: border-box;
-      text-align: center;
+      text-align: center; 
     }
 
     /* When screen gets smaller */
@@ -73,23 +73,29 @@
       margin-bottom: 10px;
     }
 
-    /* Links */
+    /* Links (Controls the main page links) */
     a {
-      color: white;
-      display: inline-block;
-      width: 100%;
+      color: #ffd700;        /* Gold text */
+      display: inline-block; 
+      width: 100%;           
       margin: 5px 0;
       text-decoration: none;
     }
 
+    /* Hover effect for the gold links */
     a:hover {
       text-decoration: underline;
+      color: #ffd700;        /* Stays gold on hover */
     }
     
-    /* Prevents the title link from turning white on hover like the other links */
+    /* Keeps the main title green instead of gold */
+    a.title {
+      color: #00cc44;        
+    }
+
     a.title:hover {
       text-decoration: none;
-      color: #00cc44;
+      color: #00cc44;        
     }
   </style>
 </head>
@@ -106,7 +112,7 @@
 
     <div class="subtitle">Main Pages</div>
 
-    <a href="original62ranking.html">Rankings for the Original 62</a>
+    <a href="ranking.html">Ranking of the Original 62</a>
     <a href="#">y</a>
     <a href="#">z</a>
     <a href="#">xy</a>
