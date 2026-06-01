@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <a href="index.html" class="title">Goosebumps Gazette</a>
 <head>
-
+  <meta charset="UTF-8">
+  <title>Goosebumps Gazette</title>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
   
   <style>
@@ -15,51 +15,48 @@
 
     /* Top title */
     .title {
-  text-align: center;
-  font-size: 70px;
-  color: #00cc44;
-
-  font-family: 'Rubik Wet Paint', cursive;
-
-  margin-top: 30px;
-  margin-bottom: 10px;
-
-  letter-spacing: 2px;
-
-  text-decoration: none; /* removes underline */
+      display: block; /* Added to ensure text-align: center works perfectly */
+      text-align: center;
+      font-size: 70px;
+      color: #00cc44;
+      font-family: 'Rubik Wet Paint', cursive;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      text-decoration: none; /* removes underline */
       
-  /* glow effect */
-text-shadow:
-  0 0 2px #00cc44,
-  0 0 6px #009933,
-  0 0 12px #006622;
-}
+      /* glow effect */
+      text-shadow:
+        0 0 2px #00cc44,
+        0 0 6px #009933,
+        0 0 12px #006622;
+    }
 
     /* Middle content column */
     .content {
-  width: 50%;
-  margin: 0 auto;
-  border-left: 2px solid red;
-  border-right: 2px solid red;
-  padding: 20px;
-  min-height: 100vh;
-  box-sizing: border-box;
-}
+      width: 50%;
+      margin: 0 auto;
+      border-left: 2px solid red;
+      border-right: 2px solid red;
+      padding: 20px;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
 
-/* When screen gets smaller */
-@media (max-width: 900px) {
-  .content {
-    width: 80%;
-  }
-}
+    /* When screen gets smaller */
+    @media (max-width: 900px) {
+      .content {
+        width: 80%;
+      }
+    }
 
-@media (max-width: 600px) {
-  .content {
-    width: 95%;
-    border-left: none;
-    border-right: none;
-  }
-}
+    @media (max-width: 600px) {
+      .content {
+        width: 95%;
+        border-left: none;
+        border-right: none;
+      }
+    }
 
     /* Intro text */
     .intro {
@@ -86,12 +83,18 @@ text-shadow:
     a:hover {
       text-decoration: underline;
     }
+    
+    /* Prevents the title link from turning white on hover like the other links */
+    a.title:hover {
+      text-decoration: none;
+      color: #00cc44;
+    }
   </style>
 </head>
 
 <body>
 
-  <div class="title">Goosebumps Gazette</div>
+  <a href="index.html" class="title">Goosebumps Gazette</a>
 
   <div class="content">
 
